@@ -72,7 +72,7 @@ def fit(args, network, data_loader, batch_end_callback=None):
 
     epoch_size = args.num_examples / args.batch_size
     batch_num = args.num_examples / args.batch_size #yegeyan 2016.12.13
-    groups_path = '/home/' + getpass.getuser() + '/mxnet/example/image-classification/groups'
+    groups_path = '/home/' + getpass.getuser() + '/MXNet-G/example/image-classification/groups'
     group_num = len(open(groups_path, 'rU').readlines()) #yegeyan 2016.12.13
     
     if args.kv_store == 'dist_sync':
